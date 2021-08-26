@@ -1,0 +1,61 @@
+
+public class UnaryOperator {
+	public static void main(String[] args) {
+		int var1,var2;
+		var1=50;
+		
+		
+		var2 = -var1;
+		System.out.println("var1 is: " + var1 + ", var2 is: " + var2);
+		//inverts the sign of var1 value, can used to change to nagtive to positive, vice versa
+		
+		var1=50;
+		var2= var1++;
+		System.out.println("var1 is: " + var1 + ", var2 is: " + var2);
+		/* in this the var2 value is replaced/added by var1 value without the increment and saved as var2.
+		 * and then ++ increcrement is added to var1.
+		 * when the ++ is at the end the value is incremented after saving to var2.
+		*/
+		
+		var1 = 50;
+		var2 = ++var1;
+		System.out.println("var1 is: " + var1 + ", var2 is: " + var2);
+		/* in this the var2 value is replaced by var1 value with the increment and saved as var2.
+		 * therefore the value of var1 and var2 is the same
+		 * when the ++ is at the beginning, the value is incremented before saving var2.
+		*/
+		
+		var1=50;
+		var2= var1--;
+		System.out.println("var1 is: " + var1 + ", var2 is: " + var2);
+		/* in this the var2 value is replaced/added by var1 value without the decrement and saved as var2.
+		 * and then -- increcrement is added to var1.
+		 * when the -- is at the end, the value is decreased after saving to var2.
+		*/
+		
+		var1 = 50;
+		var2 = --var1;
+		System.out.println("var1 is: " + var1 + ", var2 is: " + var2);
+		/* in this the var2 value is replaced by var1 value with the decrement and saved as var2.
+		 * therefore the value of var1 and var2 is the same
+		 * when the -- is at the beginning, the value is decreased before saving to var2.
+		*/
+		
+		boolean bool1, result;
+		bool1 = true;
+		result = !bool1;
+		
+		System.out.println("bool1 is: " + bool1);
+		System.out.println("Result is: " + result);
+		/* "!" will invert the value of the boolean. For example if the value is true
+		 * and you put "!" the value will invert to false, vice versa with true.
+		 */
+		
+		int a,b;
+		a = 10;
+		b = 5;
+		System.out.println(b%a);
+	}
+	
+
+}
